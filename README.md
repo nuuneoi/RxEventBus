@@ -28,7 +28,7 @@ public class RxEventBus {
 }
 ```
 
-Creating a Singleton as a Main Bus.
+Create a Main Bus as a Singleton.
 
 ```java
 public class MainBus extends RxEventBus {
@@ -47,7 +47,7 @@ public class MainBus extends RxEventBus {
 }
 ```
 
-Defining a Bus Event.
+Declare a Bus Event.
 
 ```java
 public class ClickEvent {
