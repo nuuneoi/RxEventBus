@@ -76,10 +76,12 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onNext(Object o) {
-            ClickEvent event = (ClickEvent) o;
-            Snackbar.make(event.getView(), "Event Received", Snackbar.LENGTH_LONG)
-                    .setAction("OK", null)
-                    .show();
+            if (o instanceof  ClickEvent) {
+                ClickEvent event = (ClickEvent) o;
+                Snackbar.make(event.getView(), "Event Received", Snackbar.LENGTH_LONG)
+                        .setAction("OK", null)
+                        .show();
+            }
         }
     };
 
